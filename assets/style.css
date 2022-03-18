@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#flex-nav {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.dev-name {
+    font-size: 200%;
+    position: relative;
+    left: .1%;
+}
+
+.nav-links {
+    position: relative;
+    left: 77%;
+    margin: 0 .5%;
+    padding-top: .1%;
+    font-size: 200%;
+    text-decoration: none;
+}
