@@ -1,159 +1,164 @@
-/* Global styling */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Navigation flex container */
-#flex-nav {
-  display: flex;
-  flex-flow: row wrap;
-}
-
-/* The developers name */
-body p {
-  font-size: 200%;
-  position: absolute;
-  left: 0.1%;
-}
-
-/* Hyperlinks in navigation */
-.nav-links {
-  position: relative;
-  list-style-type: none;
-  display: inline;
-  left: 87%;
-  margin: 0 0.5%;
-  padding-top: 0.1%;
-  font-size: 200%;
-  text-decoration: none;
-}
-
-/* Flex grid styling */
-.flex-grid {
-    display: flex;
-    position: static;
-    width: 70%;
-    /* margin: 10% auto; */
-    flex-flow: row wrap;
-    justify-content: space-around;
+body, html {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #FEF5ED;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   }
 
-/* Card label styling */
-.p-card1-label {
-  position: absolute;
-  left: 35%;
-  top: 25.55%;
-  background-color: teal;
+
+/* Header and navigation styling */
+
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 
-.p-card2-label {
-  position: absolute;
-  left: 48%;
-  top: 25.55%;
-  background-color: teal;
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #99A799;
 }
 
-.p-card3-label {
-  position: absolute;
-  left: 61%;
-  top: 25.55%;
-  background-color: teal;
+.nav-link {
+  float: left;
 }
 
-.p-card4-label {
-  position: absolute;
-  left: 35%;
-  top: 53.5%;
-  background-color: teal;
-}
-.p-card5-label {
-  position: absolute;
-  left: 48%;
-  top: 53.5%;
-  background-color: teal;
-}
-.p-card6-label {
-  position: absolute;
-  left: 61%;
-  top: 53.5%;
-  background-color: teal;
+.nav-link a {
+  display: block;
+  color: #FEF5ED;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 150%;
 }
 
-/* Global styling for flex items */
-.project-card {
-  flex-basis: auto;
-  flex: none;
-  width: 300px;
-  height: 300px;
-  margin: auto;
-  background-color: rgb(165, 150, 199);
+li a:hover {
+  background-color: white;
+  color: #093b09;
 }
 
-/* Global Flex item styling */
-.p-card-1,
-.p-card-2,
-.p-card-3,
-.p-card-4,
-.p-card-5,
-.p-card-6 {
-  justify-content: space-around;
+/* about me styling */
+section h1 {
+  font-size: 200%;
 }
 
-/* Individual Flex item styling */
-.p-card-1 {
-  position: absolute;
-  width: 30%;
-  height: 46%;
-  left: 35%;
-  top: 20%;
-  bottom: 58%;
+#dev-info {
+position: absolute;
+color: #093b09;
+left: 10%;
+top: 14%;
+width: 45%;
+z-index: 1;
 }
 
-.p-card-2 {
-  position: absolute;
-  height: 23%;
-  width: 12%;
-  right: 21%;
-  top: 8%;
+#nathan {
+  width: 40%;
+ }
+
+ .my-info {
+   list-style-type: none;
+   
+ }
+
+ .about-me {
+   width: 45%;
+   text-align: justify;
+ }
+
+ .about-me p {
+   font-size: 130%;
+   word-spacing: 4px;
+ }
+ 
+
+  /* Flex container and rows */
+  .project-container {
+    display: flex;
+    position: relative;
+    left: 40%;
+    /* top: 10%; */
+    height: 100%;
+    width: 45%;
+    top: 7%;
+    flex-direction: column;
+  }
+  
+  .row {
+    object-fit: cover;
+    display: flex;
+    flex: 1;
+  }
+
+  /* Universal label styling */
+  .project-label {
+    background-color: #99A799;
+    position: absolute;
+    color: #FEF5ED;
+    width: 4.8%;
+    font-size: 32px;
+  }
+
+  /* Individual label styling */
+.label-1 {
+  top: 34%;
+  left: 40%;
+  }
+  
+  .label-2 {
+    bottom: 24%;
+    left: 40%;
+  }
+  
+  .label-3 {
+  bottom: 24%;
+  left: 55%;
+  }
+  
+  .label-4 {
+    bottom: 24%;
+    right: 25%;
+  }
+  
+  .label-5 {
+  bottom: -9.5%;
+  left: 40%;
+  }
+  
+  .label-6 {
+  bottom: -9.5%;
+  right: 32.5%;
+  }
+  
+  /* Universal styling for project cards */
+  .item {
+    background-color: orange;
+    flex: 1;
+    margin: 1%;
+  }
+
+  /* Placeholder images */
+  .item-1 {
+      background-image: url(./markus-spiske-iar-afB0QQw-unsplash.jpg);
+      background-size: 100%;
+  }
+
+  .item-2 {
+    background-image: url(./placeholder-forest.avif);
+    background-size: 180%;
 }
 
-.p-card-3 {
-  position: absolute;
-  width: 14%;
-  height: 28%;
-  bottom: 14%;
-  left: 35%;
-}
+@media screen and (max-width: 992px) {
+  .nav-link {
+    float: none;
+    color: red;
+  }
 
-.p-card-4 {
-  position: absolute;
-  width: 14%;
-  height: 28%;
-  bottom: 14%;
-  left: 51%;
-}
-
-.p-card-5 {
-  position: absolute;
-  height: 23%;
-  width: 12%;
-  top: 27%;
-  right: 21%;
-}
-
-.p-card-6 {
-  position: absolute;
-  height: 23%;
-  width: 12%;
-  bottom: 14%;
-  right: 21%;
-}
-
-/* Styling for flex items 4-6 */
-.p-card-4,
-.p-card-5,
-.p-card-6 {
-  margin-top: 4%;
+  body {
+    background-color: red;
+  }
 }
 

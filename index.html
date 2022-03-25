@@ -1,45 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/style.css" />
-    <title>Nathan's Portfolio</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style.css">
+    <title>Imposter's Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icons8-falcon-30.png">
+</head>
+<body>
 
-  <body>
-    <p>Nathan Prevallet's Portfolio</p>
-    <header>
-      <div class="flex-nav">
-        <ul>
-          <li class="nav-links"><a href="#">Home</a></li>
-          <li class="nav-links"><a href="#">About</a></li>
-          <li class="nav-links"><a href="#">Gallary</a></li>
-        </ul>
-      </div>
-    </header>
 
-    <div id="project-cards">
-      <!-- This div houses the project labels -->
-      <!-- <div> -->
-        <!-- <h2 class="p-card1-label">Project 1</h2> -->
-        <!-- <h2 class="p-card2-label">Project 2</h2> -->
-        <!-- <h2 class="p-card3-label">Project 3</h2> -->
-        <!-- <h2 class="p-card4-label">Project 4</h2> -->
-        <!-- <h2 class="p-card5-label">Project 5</h2> -->
-        <!-- <h2 class="p-card6-label">Project 6</h2> -->
-     <!--  </div> -->
+<!-- Navigation -->
+<header class="header">
+    <ul class="nav">
+        <li class="nav-link"><a class="active" href="#home">Home</a></li>
+        <li class="nav-link"><a href="#projects">Projects</a></li>
+        <li class="nav-link"><a href="#contact">Contact</a></li>
+      </ul>
+</header>
 
-      <!-- This flex grid will display my projects in flex containers -->
-      <div class="flex-grid">
-        <div class="project-card p-card-1">Card 1</div>
-        <div class="project-card p-card-2">Card 2</div>
-        <div class="project-card p-card-3">Card 3</div>
-        <div class="project-card p-card-4">Card 4</div>
-        <div class="project-card p-card-5">Card 5</div>
-        <div class="project-card p-card-6">Card 6</div>
-      </div>
+<!-- About me -->
+<div id="dev-info">
+    <section>
+        <h1>Nathan Prevallet's Portfolio</h1>
+        <img id="nathan" src="./assets/nathan.png" alt="An image of Nathan">
+        <h2>Contact Info</h2>
+            <ul>
+                <li class="my-info"><a href="https://www.linkedin.com/in/nathan-prevallet-285719a7/">LinkedIn</a></li>
+                <li class="my-info"><a href="#">Gmail</a></li>
+                <li class="my-info"><a href="https://github.com/nprevallet">GitHub</a></li>
+            </ul>
+        <aside class="about-me">
+            <h3>About me</h3>
+            <p>My career began when I received an AAS in Paralegal Studies. I soon
+            realized that this was not the career path for me. I left my last legal job
+            back in 2018 and did contracts until I found a position within BD - a medical
+            device company. Soon enough my mindset shifted to one where I would rather love 
+            what I do. And so, for many years I wanted to learn how to program in various 
+            languages. An acquaintance from high school introduced me to this coding camp 
+            and here I am. Thank you for visiting my portfolio, enjoy your stay!</p>
+        </aside>    
+    </section>
+</div>
+
+<!-- Flex container and items -->
+<div class="project-container">
+    
+    <div class="row">
+        <div class="item item-1"></div>
     </div>
-  </body>
+    <div class="row">
+        <div class="item item-2"></div>
+        <div class="item item-3"></div>
+        <div class="item item-4"></div>
+    </div>
+    <div class="row">
+        <div class="item item-5"></div>
+        <div class="item item-6"></div>
+    </div>
+
+</div>
+
+<!-- Project labels -->
+<p class="project-label label-1">Project 1</p>
+<p class="project-label label-2">Project 2</p>
+<p class="project-label label-3">Project 3</p>
+<p class="project-label label-4">Project 4</p>
+<p class="project-label label-5">Project 5</p>
+<p class="project-label label-6">Project 6</p>
+
+</body>
 </html>
