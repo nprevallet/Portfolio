@@ -9,25 +9,37 @@
   </head>
 
   <body>
-    <!-- This is my header with a flex nav. -->
+    <p>Nathan Prevallet's Portfolio</p>
     <header>
-      <div id="flex-nav">
-        <p class="dev-name">Nathan Prevallet</p>
-        <a href="#" class="nav-links">Home</a>
-        <a href="#" class="nav-links">About Me</a>
-        <a href="#" class="nav-links">Gallery</a>
+      <div class="flex-nav">
+        <ul>
+          <li class="nav-links"><a href="#">Home</a></li>
+          <li class="nav-links"><a href="#">About</a></li>
+          <li class="nav-links"><a href="#">Gallary</a></li>
+        </ul>
       </div>
     </header>
 
-    <!-- This flex grid will display my projects in flex containers -->
-    <div id="flex-grid">
-      <div class="project-card"></div>
-      <div class="project-card"></div>
-      <div class="project-card"></div>
-      <div class="project-card"></div>
-      <div class="project-card"></div>
-      <div class="project-card"></div>
-    </div>
+    <div id="project-cards">
+      <!-- This div houses the project labels -->
+      <!-- <div> -->
+        <!-- <h2 class="p-card1-label">Project 1</h2> -->
+        <!-- <h2 class="p-card2-label">Project 2</h2> -->
+        <!-- <h2 class="p-card3-label">Project 3</h2> -->
+        <!-- <h2 class="p-card4-label">Project 4</h2> -->
+        <!-- <h2 class="p-card5-label">Project 5</h2> -->
+        <!-- <h2 class="p-card6-label">Project 6</h2> -->
+     <!--  </div> -->
 
+      <!-- This flex grid will display my projects in flex containers -->
+      <div class="flex-grid">
+        <div class="project-card p-card-1">Card 1</div>
+        <div class="project-card p-card-2">Card 2</div>
+        <div class="project-card p-card-3">Card 3</div>
+        <div class="project-card p-card-4">Card 4</div>
+        <div class="project-card p-card-5">Card 5</div>
+        <div class="project-card p-card-6">Card 6</div>
+      </div>
+    </div>
   </body>
 </html>
